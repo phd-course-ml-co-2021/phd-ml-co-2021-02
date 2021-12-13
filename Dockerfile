@@ -4,7 +4,7 @@ FROM tensorflow/tensorflow:2.6.0
 # Update the package manager and install a simple module. The RUN command
 # will execute a command on the container and then save a snapshot of the
 # results. The last of these snapshots will be the final image
-RUN apt-get update -y && apt-get install -y zip graphviz
+RUN apt-get update -y && apt-get install -y zip graphviz wget
 
 # Install additional Python packages
 RUN pip install --upgrade pip
